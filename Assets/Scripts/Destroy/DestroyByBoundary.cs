@@ -12,7 +12,7 @@ public class DestroyByBoundary : MonoBehaviour
         Debug.Log(gameController.gameOver);
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         Destroy(other.gameObject);
         gameController.gameOver = true;
