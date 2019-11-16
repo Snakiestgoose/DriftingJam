@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class WordManager : MonoBehaviour
 {
     public List<Word> words;
+    public int score;
+    public TextMeshProUGUI scoreText;
+    
 
     public WordSpawner wordSpawner;
 
@@ -13,7 +17,8 @@ public class WordManager : MonoBehaviour
 
     private void Start()
     {
-
+        score = 0;
+        scoreText.text = "Score = " + score;
     }
 
     public void AddWord()
@@ -53,7 +58,14 @@ public class WordManager : MonoBehaviour
         {
             hasActiveWord = false;
             words.Remove(activeWord);
+            UpdateScore();
         }
 
+    }
+
+    private void UpdateScore()
+    {
+        score += 10;
+        scoreText.text = "Score = " + score;
     }
 }

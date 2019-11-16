@@ -1,12 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rd2d;
     public float speed;
     private Vector3 change;
+    public int playerMode;
+
+    public TextMeshProUGUI text1;
+    public TextMeshProUGUI text2;
+    public TextMeshProUGUI text3;
+    public TextMeshProUGUI text4;
 
     Animator anim;
 
@@ -15,15 +23,51 @@ public class PlayerController : MonoBehaviour
     {
         rd2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        playerMode = 0;
+
+        text1.text = "";
+        text2.text = "";
+        text3.text = "";
+        text4.text = "";
     }
 
     // Update is called once per frame
     void Update()
     {
-        change = Vector3.zero;
-        change.x = Input.GetAxisRaw("Horizontal");
-        change.y = Input.GetAxisRaw("Vertical");
-        UpdateAnimationAndMove();
+        if(playerMode == 0)
+        {
+            change = Vector3.zero;
+            change.x = Input.GetAxisRaw("Horizontal");
+            change.y = Input.GetAxisRaw("Vertical");
+            UpdateAnimationAndMove();
+
+            text1.text = "";
+            text2.text = "";
+            text3.text = "";
+            text4.text = "";
+        }
+        if(playerMode == 1)
+        {
+            anim.SetInteger("State", 5);
+            text1.text = "ICE";
+            text2.text = "FIRE";
+            text3.text = "AIR";
+            text4.text = "EARTH";
+        }
+        
+        if(Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            if (playerMode == 0)
+            {
+                playerMode = 1;
+            }
+            else if (playerMode == 1)
+            {
+                playerMode = 0;
+            }
+                
+
+        }
 
 
     }
