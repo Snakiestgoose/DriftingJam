@@ -6,7 +6,7 @@ public class GameController : MonoBehaviour
 {
     public int gameMode;
     public bool gameOver;
-    GameObject controller;
+    public GameObject controller;
 
 
     // Start is called before the first frame update
