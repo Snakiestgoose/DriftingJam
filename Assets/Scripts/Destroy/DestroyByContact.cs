@@ -5,24 +5,15 @@ using UnityEngine;
 public class DestroyByContact : MonoBehaviour
 {
     public int scoreValue;
-    //private GameController gamecontroller;
-    /*
+    public GameController gameController;
+    
     private void Start()
     {
-        GameObject gameControllerObject = GameObject.FindWithTag("GameController");
-        if (gameControllerObject != null)
-        {
-            gamecontroller = gameControllerObject.GetComponent<GameController>();
-        }
-        if (gamecontroller == null)
-        {
-            Debug.Log("Cannt find 'GameController' Script");
-        }
+        gameController = gameController.GetComponent<GameController>();
     }
-    */
-    private void OnTriggerEnter(Collider other)
+    
+    private void OnTriggerExit2D(Collider2D other)
     {
-        Destroy(other.gameObject);
         Destroy(gameObject);
     }
 }
