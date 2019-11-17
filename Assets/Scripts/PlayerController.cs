@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
 
     public TypeMode typeMode;
     public Boundary boundary;
+    public DestroyByBoundary dBB;
 
 
     // Start is called before the first frame update
@@ -33,6 +34,7 @@ public class PlayerController : MonoBehaviour
     {
         rd2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        dBB = dBB.GetComponent<DestroyByBoundary>();
         playerMode = 0;
 
         text1.text = "";
@@ -43,6 +45,17 @@ public class PlayerController : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Boundary")
+        {
+            return;
+        }
+        if(other.tag == "Enemy")
+        {
+            dBB.GameOver();
+        }
+    }
     // Update is called once per frame
     void Update()
     {

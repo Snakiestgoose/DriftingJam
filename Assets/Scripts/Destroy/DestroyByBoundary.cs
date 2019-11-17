@@ -22,15 +22,20 @@ public class DestroyByBoundary : MonoBehaviour
     {
         if(gameController.gameMode == 1)
         {
-            gameOverText.text = "GAME OVER!";
-            gameController.gameOver = true;
-            menu.gameObject.SetActive(true);
+            GameOver();
         }
         
         if(gameController.gameMode == 2)
         {
             Destroy(other.gameObject);
+
         }
     }
-    
+
+    public void GameOver()
+    {
+        gameOverText.text = "GAME OVER!";
+        gameController.gameOver = true;
+        menu.gameObject.SetActive(true);
+    }
 }
