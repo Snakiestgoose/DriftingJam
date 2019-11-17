@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class WordManager : MonoBehaviour
@@ -8,15 +9,18 @@ public class WordManager : MonoBehaviour
     public List<Word> words;
     public int score;
     public TextMeshProUGUI scoreText;
-    
 
+    public GameController gameController;
     public WordSpawner wordSpawner;
+    public Button nextButton;
 
     private bool hasActiveWord;
     private Word activeWord;
 
     private void Start()
     {
+        gameController = gameController.GetComponent<GameController>();
+        nextButton = nextButton.GetComponent<Button>();
         score = 0;
         scoreText.text = "Score = " + score;
     }
@@ -24,10 +28,27 @@ public class WordManager : MonoBehaviour
     public void AddWord()
     {
 
-        Word word = new Word(WordGenerator.GetRandomWord(), wordSpawner.SpawnWord());
-        Debug.Log(word.word);
+        Word word;
+        if(gameController.gameMode == 3)
+        {
+            word = new Word(WordGenerator.getOrderedWord(), wordSpawner.SpawnWord()); 
+        }
+        else
+        {
+            word = new Word(WordGenerator.GetRandomWord(), wordSpawner.SpawnWord());
+        }
 
-        words.Add(word);
+        if(word.word == "GameOver")
+        {
+            gameController.gameOver = true;
+            nextButton.gameObject.SetActive(true);
+        }
+        else
+        {
+            words.Add(word);
+        }
+
+        
     }
 
     public void TypeLetter (char letter)

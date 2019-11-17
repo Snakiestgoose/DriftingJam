@@ -8,6 +8,7 @@ public class TypeMode : MonoBehaviour
     public PlayerController player;
     public GameObject magicBolt;
     public Transform boltSpawn;
+    public TextMeshProUGUI ice;
 
     private int typeIndex = 0;
     public string spells;
@@ -15,6 +16,7 @@ public class TypeMode : MonoBehaviour
     public void SetSpells()
     {
         spells = "ice";
+        ice = ice.GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -28,6 +30,8 @@ public class TypeMode : MonoBehaviour
                 //TypeLetter(letter);
                 if (letter.CompareTo(spells[typeIndex]) == 0)
                 {
+                    ice.color = Color.red;
+                    ice.text = ice.text.Remove(0, 1);
                     Debug.Log(spells[typeIndex]);
                     typeIndex++;
                     if (typeIndex >= spells.Length)
@@ -35,6 +39,7 @@ public class TypeMode : MonoBehaviour
                         typeIndex = 0;
                         Debug.Log("Boom");
                         Instantiate(magicBolt, boltSpawn.position, boltSpawn.rotation);
+                        ice.color = Color.white;
                     }
                 }
                 

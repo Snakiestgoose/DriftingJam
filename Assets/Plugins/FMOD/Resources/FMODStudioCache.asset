@@ -15,7 +15,8 @@ MonoBehaviour:
   Path: event:/fightag
   guid: 08d631fdf61ec04199895b4f6c5bf636
   Banks:
-  - {fileID: 4718868492667539866}
+  - {fileID: -4981242270919893344}
+  - {fileID: -6200798074513971427}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -23,6 +24,62 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 14040
+--- !u!114 &-6200798074513971427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: _Art/AudiYO/fightw/Build/Desktop/Desktop/Master.bank
+  SubDir: Desktop
+  lastModified: 637095835215733994
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-6078610395044673242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: _Art/AudiYO/fightw/Build/Desktop/Desktop/Master.strings.bank
+  SubDir: Desktop
+  lastModified: 637095835215754014
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 732
+  Exists: 1
+--- !u!114 &-4981242270919893344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: _Art/AudiYO/fightw/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637095827953914868
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-4889859014122419476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,16 +136,18 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 8386552249915893990}
-  - {fileID: 4718868492667539866}
+  - {fileID: -6078610395044673242}
+  - {fileID: -4981242270919893344}
+  - {fileID: -6200798074513971427}
   EditorEvents:
   - {fileID: -7439223695358805954}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 4718868492667539866}
+  - {fileID: -4981242270919893344}
+  - {fileID: -6200798074513971427}
   StringsBanks:
-  - {fileID: 8386552249915893990}
-  stringsBankWriteTime: 637095827953934882
+  - {fileID: -6078610395044673242}
+  stringsBankWriteTime: 637095835215754014
   cacheVersion: 3
 --- !u!114 &961124972034563000
 MonoBehaviour:
