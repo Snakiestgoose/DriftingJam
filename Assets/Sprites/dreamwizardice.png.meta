@@ -1,0 +1,439 @@
+fileFormatVersion: 2
+guid: bb6be4bf777342e459493193ceaf6bad
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4581202582284526968
+    second: dreamwizardice_0
+  - first:
+      213: 5069804205906238964
+    second: dreamwizardice_1
+  - first:
+      213: 7633642577694453312
+    second: dreamwizardice_2
+  - first:
+      213: -6253142389080964298
+    second: dreamwizardice_3
+  - first:
+      213: -4514331508065943598
+    second: dreamwizardice_4
+  - first:
+      213: -5223065480265180580
+    second: dreamwizardice_5
+  - first:
+      213: 3996021842748816594
+    second: dreamwizardice_6
+  - first:
+      213: -3037728132074357676
+    second: dreamwizardice_7
+  - first:
+      213: -1533773195244973410
+    second: dreamwizardice_8
+  - first:
+      213: 6401928826020649936
+    second: dreamwizardice_9
+  - first:
+      213: 6031804151580539690
+    second: dreamwizardice_10
+  - first:
+      213: -4658247124996071922
+    second: dreamwizardice_11
+  - first:
+      213: -9193638023861940917
+    second: dreamwizardice_12
+  - first:
+      213: -163505068395520147
+    second: dreamwizardice_13
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dreamwizardice_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 16.25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbefcdd42dad684ab46f0e6e075504b
+      internalID: -4581202582284526968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dreamwizardice_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 90
+        width: 16.25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b24379114c60b34d8df097ea3963b8f
+      internalID: 5069804205906238964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dreamwizardice_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 90
+        width: 16.25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c56bf33b8c8acc469d583e732841d25
+      internalID: 7633642577694453312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dreamwizardice_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 90
+        width: 16.25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769290b9f197f774aafabd711c1d97d8
+      internalID: -6253142389080964298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dreamwizardice_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 16.25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfeea3519441b6b4c91f281b2ed9003b
+      internalID: -4514331508065943598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dreamwizardice_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 60
+        width: 16.25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244f5485a51fa824ea9776882d18007a
+      internalID: -5223065480265180580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dreamwizardice_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 60
+        width: 16.25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a1f00f0af25294d968d48dfb69de2a
+      internalID: 3996021842748816594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dreamwizardice_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 60
+        width: 16.25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb72b1655a67c3478b4e64e9b12d82b
+      internalID: -3037728132074357676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dreamwizardice_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 30
+        width: 16.25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c70eded4978233a43acb0670ba714ae2
+      internalID: -1533773195244973410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dreamwizardice_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 30
+        width: 16.25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059e7f9a70d2a8348aa5f1bd9a764a0e
+      internalID: 6401928826020649936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dreamwizardice_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 30
+        width: 16.25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0960656a7ee5df648a04dbb993f43255
+      internalID: 6031804151580539690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dreamwizardice_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 30
+        width: 16.25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba61151ba0066894ca4aee813835d624
+      internalID: -4658247124996071922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dreamwizardice_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16.25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5000259d713fbc64bbfd80b7f2548631
+      internalID: -9193638023861940917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dreamwizardice_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16.25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c98b445ec89e649a744e5c1fc4783e
+      internalID: -163505068395520147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

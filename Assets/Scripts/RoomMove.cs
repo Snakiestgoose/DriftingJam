@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RoomMove : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class RoomMove : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        SceneManager.LoadScene(4);
+
         if(other.CompareTag("Player"))
         {
             camera.minPosition += cameraChange;

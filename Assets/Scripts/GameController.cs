@@ -11,6 +11,20 @@ public class GameController : MonoBehaviour
     public int score;
     public TextMeshProUGUI scoreText;
 
+    /*
+     * GAMEMODES
+     * 
+     * 0 - Main Menu
+     * 1 - Office Arcade
+     * 2 - Dreams Arcade
+     * 3 - Office 
+     * 4 - Dreams
+     * 
+     */
+     
+       
+
+
 
     // Start is called before the first frame update
     void Start()

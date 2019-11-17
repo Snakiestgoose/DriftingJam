@@ -38,7 +38,7 @@ public class WordManager : MonoBehaviour
             word = new Word(WordGenerator.GetRandomWord(), wordSpawner.SpawnWord());
         }
 
-        if(word.word == "GameOver")
+        if(word.word == "NEXT")
         {
             gameController.gameOver = true;
             nextButton.gameObject.SetActive(true);

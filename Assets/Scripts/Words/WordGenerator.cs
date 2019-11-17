@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class WordGenerator : MonoBehaviour
 {
-    private static string[] wordList = { "accounting", "office", "accruals", "advertise", "ruby", "dog", "derp", "yellow", "butt", "hole"    };
+    private static string[] wordList = { "accounting", "office", "coworkers", "depression", "misery", "sadness", 
+        "slump", "unhappy", "hopeless", "helpless", "weak", "gloomy", "woe", "pen", "paper", "scissors", "stapler", 
+        "burnout", "stress", "overwhelmed", "drained", "cubicle", "alone", "isolation", "desk", "chair", "melancholy", "cold" };
+
     private static int index = 0;
 
     public static string GetRandomWord()
@@ -15,7 +18,12 @@ public class WordGenerator : MonoBehaviour
         return randomWord;
     }
 
-    public static string[] orderList = { "I", "work", "in", "an", "office", ".", "GameOver" };
+    public static string[] orderList = { "wow", "life", "is", "getting", "harder", "and", "each", "day", "it", 
+        "is", "getting", "harder", "to", "breathe", "when", "will", "this", "shift", "be", "over", "maybe", 
+        "something", "will", "make", "me", "happy", "today", "nothing", "ever", "makes", "me", "happy", "though", 
+        "is", "it", "time", "to", "go", "home", "already", "maybe", "i", "will", "not", "feel", "alone", "tonight", 
+        "too", "bad", "i", "am", "always", "alone", ".", "NEXT" };
+
 
     public static string getOrderedWord()
     {

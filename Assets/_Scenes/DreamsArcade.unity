@@ -314,8 +314,6 @@ MonoBehaviour:
   controller: {fileID: 1971032559}
   score: 0
   scoreText: {fileID: 6778407}
-  audioClip: {fileID: 0}
-  musicSource: {fileID: 0}
 --- !u!4 &68423615
 Transform:
   m_ObjectHideFlags: 0
@@ -3961,6 +3959,7 @@ MonoBehaviour:
     yMin: -4
     yMax: -2
   dBB: {fileID: 2016675332}
+  gameController: {fileID: 68423614}
 --- !u!50 &1971032561
 Rigidbody2D:
   serializedVersion: 4

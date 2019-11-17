@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     public TypeMode typeMode;
     public Boundary boundary;
     public DestroyByBoundary dBB;
+    public GameController gameController;
 
 
     // Start is called before the first frame update
@@ -35,6 +36,7 @@ public class PlayerController : MonoBehaviour
         rd2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         dBB = dBB.GetComponent<DestroyByBoundary>();
+        gameController = gameController.GetComponent<GameController>();
         playerMode = 0;
 
         text1.text = "";
@@ -66,17 +68,24 @@ public class PlayerController : MonoBehaviour
             change.y = Input.GetAxisRaw("Vertical");
             
             UpdateAnimationAndMove();
+            
+            if(gameController.gameMode == 2)
+            {
+                transform.position = new Vector2
+                (
+                    Mathf.Clamp(rd2d.position.x, boundary.xMin, boundary.xMax),
+                    Mathf.Clamp(rd2d.position.y, boundary.yMin, boundary.yMax)
+                );
 
-            transform.position = new Vector2
-            (
-                Mathf.Clamp(rd2d.position.x, boundary.xMin, boundary.xMax),
-                Mathf.Clamp(rd2d.position.y, boundary.yMin, boundary.yMax)
-            );
+                text1.text = "";
+                text2.text = "";
+                text3.text = "";
+                text4.text = "";
+            }
 
-            text1.text = "";
-            text2.text = "";
-            text3.text = "";
-            text4.text = "";
+            
+
+            
         }
         if(playerMode == 1)
         {
@@ -90,7 +99,7 @@ public class PlayerController : MonoBehaviour
 
         }
         
-        if(Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space))
+        if((Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space)) && gameController.gameMode == 2)
         {
             if (playerMode == 0)
             {

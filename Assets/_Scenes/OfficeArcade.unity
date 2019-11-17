@@ -229,8 +229,6 @@ MonoBehaviour:
   controller: {fileID: 1257203227}
   score: 0
   scoreText: {fileID: 0}
-  audioClip: {fileID: 0}
-  musicSource: {fileID: 0}
 --- !u!4 &74754524
 Transform:
   m_ObjectHideFlags: 0
@@ -353,7 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06de0c7864b96da488255280956d41bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: ad6ee6ed1973402459a72c1aa9252d4c, type: 3}
+  audioClip: {fileID: 8300000, guid: 46d7f6c150961e84ea01d2e94875e9c9, type: 3}
   musicSource: {fileID: 74754525}
 --- !u!1 &442631441
 GameObject:
@@ -1058,6 +1056,7 @@ MonoBehaviour:
   scoreText: {fileID: 2097429927}
   gameController: {fileID: 74754523}
   wordSpawner: {fileID: 1257203231}
+  nextButton: {fileID: 0}
 --- !u!4 &1257203229
 Transform:
   m_ObjectHideFlags: 0
