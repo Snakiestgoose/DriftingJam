@@ -1,0 +1,1 @@
+"depression", "misery", "sadness", "slump", "unhappy", "hopeless", "helpless", "weak", "gloomy", "woe", "pen", "paper", "scissors", "stapler", "burnout", "stress", "overwhelmed", "drained", "cubicle", "alone", "isolation", "desk", "chair", "melancholy", "cold"
