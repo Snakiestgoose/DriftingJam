@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: 281b187b0e2859940990512dd8670037
   - enabled: 1
     path: Assets/_Scenes/Office.unity
-    guid: 6b67699f0506fa24b82c13c073251cfe
+    guid: 051fcd5a993f1704597a2aaf29d47d38
   - enabled: 1
     path: Assets/_Scenes/Dreamscape.unity
     guid: 2dda1d8399242644aaa7945fe805bc8e

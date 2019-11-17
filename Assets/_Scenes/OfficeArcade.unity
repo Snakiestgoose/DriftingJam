@@ -1056,6 +1056,7 @@ MonoBehaviour:
   words: []
   score: 0
   scoreText: {fileID: 2097429927}
+  gameController: {fileID: 74754523}
   wordSpawner: {fileID: 1257203231}
 --- !u!4 &1257203229
 Transform:

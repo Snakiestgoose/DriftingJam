@@ -31,6 +31,11 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    
+    public void DreamWorld()
+    {
+        SceneManager.LoadScene(2);
+    }
 
     public void AwakeArcade()
     {
