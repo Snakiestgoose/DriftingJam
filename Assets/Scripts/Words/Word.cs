@@ -19,6 +19,12 @@ public class Word
         display.SetWord(word);
     }
 
+    public Word(string _word)
+    {
+        word = _word;
+        typeIndex = 0;
+    }
+
     public char GetNextLetter()
     {
         return word[typeIndex];

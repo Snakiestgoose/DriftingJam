@@ -7,13 +7,18 @@ public class DestroyByContact : MonoBehaviour
     public int scoreValue;
     public GameController gameController;
     
+
     private void Start()
     {
         gameController = gameController.GetComponent<GameController>();
     }
     
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
+        if(other.tag == "Boundary")
+        {
+            return;
+        }
         Destroy(gameObject);
     }
 }

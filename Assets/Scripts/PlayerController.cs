@@ -18,6 +18,10 @@ public class PlayerController : MonoBehaviour
 
     Animator anim;
 
+    public GameObject magicBolt;
+    public TypeMode typeMode;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +33,8 @@ public class PlayerController : MonoBehaviour
         text2.text = "";
         text3.text = "";
         text4.text = "";
+
+        
     }
 
     // Update is called once per frame
@@ -49,10 +55,13 @@ public class PlayerController : MonoBehaviour
         if(playerMode == 1)
         {
             anim.SetInteger("State", 5);
-            text1.text = "ICE";
-            text2.text = "FIRE";
-            text3.text = "AIR";
-            text4.text = "EARTH";
+            text1.text = "ice";
+            text2.text = "fire";
+            text3.text = "air";
+            text4.text = "earth";
+
+            typeMode.SetSpells();
+
         }
         
         if(Input.GetKeyDown(KeyCode.Mouse0))
@@ -60,6 +69,11 @@ public class PlayerController : MonoBehaviour
             if (playerMode == 0)
             {
                 playerMode = 1;
+                
+
+
+
+
             }
             else if (playerMode == 1)
             {
