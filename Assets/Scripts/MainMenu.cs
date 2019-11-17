@@ -14,6 +14,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public void Menu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public void NewGame()
     {
         SceneManager.LoadScene(1);

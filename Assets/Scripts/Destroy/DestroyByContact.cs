@@ -4,21 +4,30 @@ using UnityEngine;
 
 public class DestroyByContact : MonoBehaviour
 {
-    public int scoreValue;
     public GameController gameController;
-    
 
     private void Start()
     {
-        gameController = gameController.GetComponent<GameController>();
+        GameObject gameControllerObject = GameObject.FindWithTag("GameController");
+        if (gameControllerObject != null)
+        {
+            gameController = gameControllerObject.GetComponent<GameController>();
+        }
+        if (gameController == null)
+        {
+            Debug.Log("Cannot find 'GameController' Script");
+        }
     }
-    
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Boundary")
+        if (other.tag == "Boundary")
         {
             return;
         }
+        gameController.UpdateScore();
+        Destroy(other.gameObject);
         Destroy(gameObject);
     }
+
 }
