@@ -11,18 +11,13 @@ public class TypeMode : MonoBehaviour
     private bool hasActiveWord;
     private Word activeWord;
 
-    public List<Word> spells = new List<Word>();
+    private int typeIndex = 0;
 
+    public string spells;
+    
     public void SetSpells()
     {
-        Word word = new Word(player.text1.text);
-        spells.Add(word);
-        word = new Word(player.text2.text);
-        spells.Add(word);
-        word = new Word(player.text3.text);
-        spells.Add(word);
-        word = new Word(player.text4.text);
-        spells.Add(word);
+        spells = "ice";
     }
 
     // Update is called once per frame
@@ -33,7 +28,17 @@ public class TypeMode : MonoBehaviour
             //Code for TypeMode
             foreach (char letter in Input.inputString)
             {
-                TypeLetter(letter);
+                //TypeLetter(letter);
+                if (letter.CompareTo(spells[typeIndex]) == 0)
+                {
+                    if (typeIndex > spells.Length)
+                    {
+                        typeIndex = 0;
+                        Debug.Log("Boom");
+                    }
+                }
+                
+
             }
 
 
@@ -41,7 +46,7 @@ public class TypeMode : MonoBehaviour
         }
     }
 
-
+    /*
     public void TypeLetter(char letter)
     {
         if (hasActiveWord)
@@ -49,7 +54,8 @@ public class TypeMode : MonoBehaviour
             //check if letter was next then remove letter
             if (activeWord.GetNextLetter() == letter)
             {
-                activeWord.TypeLetter();
+                //activeWord.TypeLetter();
+                typeIndex++;
             }
         }
         else
@@ -59,14 +65,16 @@ public class TypeMode : MonoBehaviour
                 if (word.GetNextLetter() == letter)
                 {
                     activeWord = word;
+                    Debug.Log(activeWord);
                     hasActiveWord = true;
-                    word.TypeLetter();
+                    //word.TypeLetter();
+                    typeIndex++;
                     break;
                 }
             }
         }
 
-        if (hasActiveWord && activeWord.WordTyped())
+        if (hasActiveWord && activeWord.word.Length < typeIndex)
         {
             hasActiveWord = false;
             Debug.Log("Boom");
@@ -77,9 +85,17 @@ public class TypeMode : MonoBehaviour
 
     }
 
+    public char GetNextLetter()
+    {
+        return activeWord.word[typeIndex];
+    }
 
+    public void TypeLetter()
+    {
+        typeIndex++;
+    }
 
-
+    */
 
 
 }
