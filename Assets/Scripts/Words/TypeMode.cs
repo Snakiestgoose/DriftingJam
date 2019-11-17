@@ -6,13 +6,10 @@ using TMPro;
 public class TypeMode : MonoBehaviour
 {
     public PlayerController player;
-    public int magicSpells;
-
-    private bool hasActiveWord;
-    private Word activeWord;
+    public GameObject magicBolt;
+    public Transform boltSpawn;
 
     private int typeIndex = 0;
-
     public string spells;
     
     public void SetSpells()
@@ -31,10 +28,13 @@ public class TypeMode : MonoBehaviour
                 //TypeLetter(letter);
                 if (letter.CompareTo(spells[typeIndex]) == 0)
                 {
-                    if (typeIndex > spells.Length)
+                    Debug.Log(spells[typeIndex]);
+                    typeIndex++;
+                    if (typeIndex >= spells.Length)
                     {
                         typeIndex = 0;
                         Debug.Log("Boom");
+                        Instantiate(magicBolt, boltSpawn.position, boltSpawn.rotation);
                     }
                 }
                 
