@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{97145fd8-3030-4bcd-b48f-ae642837d60b}">
+		<property name="assetPath">
+			<value>FIGHT.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>14.039999999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7dd7f7b8-2cd3-4cf8-9d7a-8aa9f5606f5e}</destination>
+		</relationship>
+	</object>
+</objects>
