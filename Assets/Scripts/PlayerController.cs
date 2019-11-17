@@ -56,9 +56,9 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetInteger("State", 5);
             text1.text = "ice";
-            text2.text = "fire";
-            text3.text = "air";
-            text4.text = "earth";
+            text2.text = "";
+            text3.text = "";
+            text4.text = "";
 
             typeMode.SetSpells();
 
