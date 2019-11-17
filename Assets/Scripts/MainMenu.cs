@@ -11,9 +11,17 @@ using UnityEngine.SceneManagement;
  * 4 - DreamsArcade
  */
 
+    
+
 
 public class MainMenu : MonoBehaviour
 {
+
+    private void Start()
+    {
+        
+    }
+
     public void Menu()
     {
         SceneManager.LoadScene(0);
