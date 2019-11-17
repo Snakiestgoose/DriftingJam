@@ -1,0 +1,11 @@
+"I see you finally made it!",
+"...",
+"Not much of a talker I take it?",
+"...",
+"Well alrighty. Nevertheless, welcome to your dreamland - a place you can escape your normal, boring and depressing life.",
+"I...",
+"I'm a wizard who controls the element of ice - and now that you have finally made it here you are also a wizard!",
+"Wait, how does that...",
+"Silly you, don't ask questions. Here take the elemental power of ice. To use it, just press the SPACE BAR to enter into typing mode, and start typing the word ICE to shoot out ice beams.",
+"So, I'm a wiz....",
+"I must be off now, have fun and don't die!"
