@@ -18,7 +18,6 @@ public class PlayerController : MonoBehaviour
 
     Animator anim;
 
-    public GameObject magicBolt;
     public TypeMode typeMode;
     
 
